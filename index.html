@@ -15,21 +15,30 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper"></div>
       <div class="weather-app-project">
-        <h1>Tokyo</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
+        <div class="overview">
+          <h1>Tokyo</h1>
+          <ul>
+            <li>Friday 05:00</li>
+            <li>Clear</li>
+          </ul>
+        </div>
         <div class="row">
-          <div class="col-md-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt="Sunny"
-            />
-            12°C | °F
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+                alt="Clear"
+                class="float-left"
+              />
+              <div class="float-left">
+                <strong>12</strong
+                ><span class="units">°C | <a href="#">°F</a></span>
+              </div>
+            </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-6">
             <ul>
               <li>Precipitation: 0%</li>
               <li>Humidity: 73%</li>
@@ -37,15 +46,17 @@
             </ul>
           </div>
         </div>
-      
+      </div>
       <small>
         <a
           href="https://github.com/cathrinahwj/weather-app-project"
           target="_blank"
           >Open-source code</a
-        >by Cathrina Hao
+        >
+        by Cathrina Hao
       </small>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
